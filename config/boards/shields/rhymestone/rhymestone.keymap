@@ -10,13 +10,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define RGBTOG &rgb_ug RGB_TOG
-#define RGBEFF &rgb_ug RGB_EFF
-#define RGBEFR &rgb_ug RGB_EFR
-#define RGBBRI &rgb_ug RGB_BRI
-#define RGBBRD &rgb_ug RGB_BRD
 
-#define EXTTOG &ext_power EP_TOG
 
 
 / {
@@ -44,8 +38,8 @@
                         bindings = <
 &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
 &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH
-RGBTOG   RGBEFF RGBBRI   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE
-EXTTOG   RGBEFR RGBBRD   &trans   &trans      &trans    &trans    &trans          &trans   &trans
+&rgb_ug RGB_TOG   &rgb_ug RGB_EFF &rgb_ug RGB_BRI   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE
+&ext_power EP_TOG &rgb_ug RGB_EFR &rgb_ug RGB_BRD   &trans   &trans      &trans    &trans    &trans          &trans   &trans
                         >;
                 };
         };
