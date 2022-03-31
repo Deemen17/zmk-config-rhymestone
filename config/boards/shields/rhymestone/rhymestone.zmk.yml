@@ -1,0 +1,9 @@
+file_format: "1"
+id: rhymestone
+name: Rhymestone
+type: shield
+url: https://github.com/marksard/Keyboards
+requires: [pro_micro]
+features:
+  - keys
+  - underglow
